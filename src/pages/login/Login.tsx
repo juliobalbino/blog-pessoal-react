@@ -6,10 +6,10 @@ import './Login.css';
 function Login() {
     return (
         <Grid container direction='row' justifyContent='center' alignItems='center'>
-            <Grid alignItems='center' xs={6}>
+            <Grid alignItems='center' xs={12} sm={6}>
                 <Box paddingX={20}>
                     <form action="">
-                        <Typography variant="h3" color="primary" gutterBottom component='h3' align='center' style={{fontWeight: 'bold'}}>Entrar</Typography>
+                        <Typography variant="h3" color="primary" gutterBottom component='h3' align='center' className='textos'>Entrar</Typography>
                         <TextField
                           id="usuario"
                           label="usuário"
@@ -31,7 +31,7 @@ function Login() {
                         />
 
                         <Box marginTop={2} textAlign='center'>
-                            <Link to='home' className='text-decorator-none'>
+                            <Link to='home' className='text-decoration-none'>
                                 <Button type='submit' variant='contained' color='primary'>
                                     Logar
                                 </Button>
@@ -44,17 +44,14 @@ function Login() {
                                 Não tem uma conta?
                             </Typography>
                         </Box>
-                        <Typography variant="subtitle1" gutterBottom align='center' style={{fontWeight: 'bold'}} color="initial">
+                        <Typography variant="subtitle1" gutterBottom align='center' className='textos' color="initial">
                             Cadastre-se
                         </Typography>
                     </Box>
                 </Box>
             </Grid>
 
-            <Grid xs={6} style={{
-                backgroundImage: `url(https://imgur.com/UbehjVt.gif)`,
-                backgroundRepeat: 'no-repeat', width: '100vh', minHeight: '100vh', backgroundSize: 'cover', backgroundPosition: 'center'
-            }}>
+            <Grid xs={12} sm={6} className='imagem'>
 
             </Grid>
         </Grid>
