@@ -5,6 +5,7 @@ import Home from './pages/home/Home';
 import Navbar from './components/statics/navbar/Navbar';
 import Footer from './components/statics/footer/Footer';
 import Login from './pages/login/Login';
+import CadastroUsuario from './pages/cadastroUsuario/CadastroUsuario';
 
 function App() {
   return (
@@ -24,6 +25,11 @@ function App() {
           <Route path='/home'>
             <Home />
           </Route>
+
+          <Route path='/cadastrousuario'>
+            <CadastroUsuario />
+          </Route>
+          
         </div>
       </Switch>
       <Footer />
